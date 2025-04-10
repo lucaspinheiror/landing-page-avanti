@@ -1,0 +1,177 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+:root {
+    --primary-color: #005cff;
+    --background-gray: #e7e7ea;
+    
+
+    --text-white: #fff;
+    --text-black: rgb(46, 46, 46);
+}
+
+body {
+    color: var(--text-black);
+}
+
+.coupon {
+    background-color: var(--primary-color);
+
+    font-size: .9rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-white);
+
+    padding: .5rem 1rem;
+}
+
+.coupon-10 {
+    background-color: #6220c1;
+
+    padding: 0 .2rem;
+}
+
+.coupon-discount {
+    font-weight: lighter;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--text-black);
+
+    padding: 1rem;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.cart-quantitie {
+    background-color: var(--primary-color);
+
+    position: absolute;
+    top: -1rem;
+    right: -.6rem;
+
+    width: max-content;
+    height: max-content;
+    padding: .2rem .5rem;
+
+    font-size: .8rem;
+    color: var(--text-white);
+    
+    border-radius: 50%;
+}
+
+.logo {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.search {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.search div {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: .6rem;
+
+    padding: .6rem;
+}
+
+.search input {
+    border: none;
+    outline: none;
+
+    font-weight: bold;
+
+    width: 100%;
+}
+
+.search i {
+    cursor: pointer;
+}
+
+/* Hero */
+.hero-container {
+    background-color: var(--background-gray);
+
+    height: 20rem;
+}
+
+.hero {
+    position: relative;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: -12em;
+    left: -10.5rem;
+    width: 25rem;
+}
+
+.hero-text {
+    text-align: center;
+    z-index: 1;
+
+    width: max-content;
+    
+    padding-right: 1rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.title-super {
+    font-weight: bold;
+}
+
+.title-sale {
+    font-weight: lighter;
+}
+
+.text {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+    
+    margin: 0 0 1rem 0;
+}
+
+.text-off {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
