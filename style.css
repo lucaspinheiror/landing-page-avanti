@@ -333,6 +333,42 @@ body {
     top: 18rem;
 }
 
+/* Conteúdo */
+.cup-image img {
+    width: 100%;
+}
+
+.content {
+    padding: 2.25rem 1rem;
+    font-size: 14px;
+}
+
+.content p:last-child {
+    margin-top: 1rem;
+}
+
+.content-title {
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+}
+
+/* Serviços */
+.container-services {
+    background-color: var(--background-gray);
+    padding: 2rem;
+}
+
+.services-image {
+    width: 100%;
+}
+
+.services-title {
+    margin: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
 @media (min-width: 768px) {
     .button-prev,
     .button-next {
