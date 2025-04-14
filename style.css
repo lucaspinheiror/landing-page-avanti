@@ -12,6 +12,8 @@
     --primary-color: #005cff;
     --background-gray: #e7e7ea;
     --background-white: #fff;
+    --background-discount: rgb(81, 196, 196);
+    --background-new: rgb(28, 28, 109);
 
 
     --text-white: #fff;
@@ -178,53 +180,61 @@ body {
 }
 
 /* Carrossel */
+.container-carousel {
+    padding: 1.25rem;
+}
+
 .carousel {
-    width: 90%;
     max-width: 100rem;
 }
 
 .slider-wrapper {
     position: relative;
     overflow: hidden;
-    margin: 2rem auto;
+    margin: auto;
 
     width: 100%;
 }
 
-.more-items {
+.news-items {
     display: flex;
     justify-content: space-between;
 
-    padding-top: 4rem;
-}
+    margin: 4rem auto 1rem;
 
-.more-items p {
+    max-width: 100rem;
+
     font-weight: bold;
 }
 
-.more-items p:first-child {
+.releases {
+  
     font-size: 1.2rem;
 }
 
-.more-items p:last-child:hover {
-    color: var(--primary-color);
+.see-more {
     text-decoration: underline;
+}
 
-    cursor: pointer;
+.card-list {
+    margin-bottom: 2rem;
 }
 
 .card-item {
+    position: relative;
     border-radius: .5rem;
     border: 1px solid var(--background-gray);
 
     color: var(--text-gray);
+
+    padding: 1rem;
 }
 
 .new {
     background-color: var(--background-new);
 
     position: absolute;
-    top: .4rem;
+    top: .75rem;
     left: .6rem;
 
     border-radius: .5rem;
@@ -233,11 +243,7 @@ body {
     text-transform: uppercase;
     color: var(--text-white);
 
-    padding: .2rem .4rem
-}
-
-.card-item {
-    padding: 1rem;
+    padding: .4rem .6rem
 }
 
 .card-image {
@@ -250,12 +256,8 @@ body {
 }
 
 .card-prices {
-    margin-bottom: .6rem;
-    margin-top: .6rem;
-}
-
-.price-del {
-    font-size: .9rem;
+    margin-bottom: .25rem;
+    margin-top: .75rem;
 }
 
 .price {
@@ -271,12 +273,12 @@ body {
 .discount {
     background-color: var(--background-discount);
 
-    text-decoration: underline;
+    font-weight: bold;
     font-size: .9rem;
     color: var(--text-white);
 
-    padding: .2rem .4rem;
-    margin-left: .5rem;
+    padding: .2rem .8rem;
+    margin-left: 1rem;
 
     cursor: pointer;
 
