@@ -208,7 +208,7 @@ body {
 }
 
 .releases {
-  
+
     font-size: 1.2rem;
 }
 
@@ -248,9 +248,8 @@ body {
 
 .card-image {
     width: 100%;
-    height: 18rem;
-    object-fit: cover;
-    object-position: top;
+    height: 16rem;
+    object-fit: contain;
 
     border-radius: .5rem .5rem 0 0;
 }
@@ -323,7 +322,7 @@ body {
     cursor: pointer;
 }
 
-.button-prev { 
+.button-prev {
     left: 0rem;
     top: 18rem;
 }
@@ -355,7 +354,8 @@ body {
 /* Serviços */
 .container-services {
     background-color: var(--background-gray);
-    padding: 2rem;
+    padding: 2rem 1rem;
+    margin-bottom: 3.5rem;
 }
 
 .services-image {
@@ -366,10 +366,57 @@ body {
     margin: 1rem 0;
     text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .75rem;
+}
+
+.service-icon {
+    background-color: var(--primary-color);
+
+    color: var(--text-white);
+    font-size: 1.25rem;
+
+    border-radius: 50%;
+
+    padding: 1.25rem;
+}
+
+.service-01,
+.service-02,
+.service-03 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.background-contact {
+    background-image: url(img/fundo.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    height: 28rem;
+}
+
+.background-contact p {
+    background-color: var(--primary-color);
+
+    text-align: center;
+    color: var(--text-white);
+
+    padding: 1rem;
 }
 
 @media (min-width: 768px) {
+
     .button-prev,
     .button-next {
         display: inline;
