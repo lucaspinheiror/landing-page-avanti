@@ -1,3 +1,10 @@
+const faq = document.querySelectorAll('.faq-item')
+
+
+
+
+
+// Carrossel
 const swiper = new Swiper('.slider-wrapper', {
 
     loop: true,
